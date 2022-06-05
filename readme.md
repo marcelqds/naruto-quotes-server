@@ -2,6 +2,8 @@
 ====================
 ## Simple app to generate random Naruto quotes using Node.js
 
+## Install
+
 ```sh
     npm install naturo-quotes-server-node
 ```
@@ -19,10 +21,13 @@ or
 
 or set for include property in commandline `--port` and number port greater equal 2000. The default port is `3004`.
 
-example: 
-
 ```sh
     npx naruto-quotes-server-node --port 3005
+```
+or
+
+```sh
+    node ./node_modules/.bin/naruto-quotes-server-node --port 3008
 ```
 
 
