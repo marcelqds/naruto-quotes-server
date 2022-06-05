@@ -1,15 +1,19 @@
+/**
+ * @author Marcelo Q. Santana
+ * @copyright 2022 Marcelo Q. Santana.
+ */ 
+
 const { createReadStream } = require('fs');
 const { readFile } = require('fs/promises');
 const path = require('path');
 
 let quotes = null;
 
-const ReadQuotes = async() => {
+const loadQuotes = async() => {
     if(quotes) return true;
 
     try{
         const pathFile = path.join(__dirname,'utils','quotes.json');
-
         const fileRead = await readFile(pathFile,{'encoding': 'utf8'});
         quotes = await JSON.parse(fileRead);
         if(!typeof(quotes) === 'object') return null;
@@ -30,6 +34,6 @@ const getOneQuote = () => {
 }
 
 module.exports={
-    ReadQuotes,
+    loadQuotes,
     getOneQuote,
 };

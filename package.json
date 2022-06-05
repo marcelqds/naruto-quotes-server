@@ -2,16 +2,19 @@
   "name": "naruto-quotes-server-node",
   "version": "1.0.0",
   "description": "Naruto Quotes Api ==================== Simple app to generate random Naruto quotes using Node.js",
-  "main": "src/server.js",
+  "main": "dist/bin/index.js",
   "scripts": {
-    "start" : "node ./src/server.js"
+    "start" : "node ./dist/bin/index.js"
+  },
+  "bin":{
+    "naruto-quotes-server-node" : "./dist/bin/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/marcelqds/naruto-quotes-server.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Marcelo Queiroz <marcelqds@gmail.com> (https://www.linkedin.com/in/marcelqds)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/marcelqds/naruto-quotes-server/issues"
