@@ -1,23 +1,30 @@
-Naruto Quotes Api
+# Naruto Quotes Get Quote
 ====================
-Simple app to generate random Naruto quotes using Node.js
+## Simple app to generate random Naruto quotes using Node.js
 
-sh```
+```sh
     npm install naturo-quote-server-node
 ```
 
-sh```
-    npm run start
+## Execute
+
+```sh
+    npx naruto-quotes-server-node 
 ```
-or set for include property in commandline `--port` 
+or
+
+```sh
+    node ./node_modules/.bin/naruto-quotes-server-node
+```
+
+or set for include property in commandline `--port` and number port greater equal 2000. The default port is `3004`.
 
 example: 
 
-sh```
-    npm run start --port 8085
+```sh
+    npx naruto-quotes-server-node --port 3005
 ```
 
 
-
-# License
+## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

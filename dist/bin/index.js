@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * @author Marcelo Q. Santana
  * @copyright 2022 Marcelo Q. Santana.
