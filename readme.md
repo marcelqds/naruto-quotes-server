@@ -1,9 +1,9 @@
-# Naruto Quotes Get Quote
+# Naruto random quotes
 ====================
 ## Simple app to generate random Naruto quotes using Node.js
 
 ```sh
-    npm install naturo-quote-server-node
+    npm install naturo-quotes-server-node
 ```
 
 ## Execute
