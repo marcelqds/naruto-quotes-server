@@ -29,7 +29,8 @@ const loadQuotes = async() => {
 const getOneQuote = () => {
     length = quotes.length;
     let index = Math.floor(Math.random() * length);
-    return quotes[index];    
+    const {speaker,quote } = quotes[index];
+    return {speaker, quote};
 }
 
 module.exports={

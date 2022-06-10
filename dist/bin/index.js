@@ -22,7 +22,7 @@ let port = getPort();
     }while(isUse);
 
     server.listen(port, () => {
-        console.log(`Server started! :: http://127.0.0.1:${port}`);
+        console.log(`Server quotes started! :: http://127.0.0.1:${port}`);
     });
 })();
 

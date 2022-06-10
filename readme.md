@@ -1,4 +1,4 @@
-# Naruto Random Quotes 
+# Naruto Random Quotes
 
 ## Simple app to generate random Naruto quotes using Node.js
 
@@ -10,7 +10,7 @@
 ```
 
 
-### Execute
+### Usage
 
 ```sh
     npx naruto-quotes-server-node 
@@ -39,7 +39,6 @@ or
 
 ```json
 {
-    "id" : "number",
     "speaker" : "string",
     "quote" : "string"
 }
