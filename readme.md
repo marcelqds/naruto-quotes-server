@@ -1,6 +1,7 @@
 # Naruto Random Quotes
 
 ## Simple app to generate random Naruto quotes using Node.js
+![naruto-server-quotes](https://user-images.githubusercontent.com/20728338/173084352-39e5193f-03b2-4546-b69b-55dbca14909a.gif)
 
 
 ### Install
