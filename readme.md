@@ -35,5 +35,17 @@ or
     node ./node_modules/.bin/naruto-quotes-server-node --port 3008
 ```
 
+### Response
+
+```json
+{
+    "id" : "number",
+    "speaker" : "string",
+    "quote" : "string"
+}
+```
+
+
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
