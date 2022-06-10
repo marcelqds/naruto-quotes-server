@@ -1,12 +1,12 @@
 /**
  * @author Marcelo Q. Santana
- * @copyright 2022 Marcelo Q. Santana.
- */ 
+*/
+const http = require('http');
 
 const getPort = () => {
     const argv = process.argv.slice(2);
     indexPort = argv.indexOf('--port');
-    let port = 3004;
+    let port = 5000;
 
     if(argv.length >= 2 
     && indexPort > -1 
@@ -17,6 +17,21 @@ const getPort = () => {
     return port;
 }
 
+const portInUse = (port = 5000) => {
+   return new Promise( async resolve => { 
+        let request = await http.get(`http://127.0.0.1:${port}`,_=>{
+            console.log(`Port "${port}" is in use`);
+            resolve(true);
+        });
+
+        request.on('error',_=> {            
+            resolve(false);
+        });
+    });
+}
+
+
 module.exports = {
     getPort,
+    portInUse
 }

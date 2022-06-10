@@ -1,14 +1,12 @@
 #!/usr/bin/env node
 /**
  * @author Marcelo Q. Santana
- * @copyright 2022 Marcelo Q. Santana.
  */ 
-
 const { server } = require('../server.js');
 const { loadQuotes } = require('../read-quotes');
-const { getPort } = require('../port');
+const { getPort, portInUse } = require('../port');
 
-const port = getPort();
+let port = getPort();
 
 (async() =>{
    let hasQuotes = await loadQuotes();
@@ -17,8 +15,14 @@ const port = getPort();
         process.exit();
     }
 
+    let isUse = true;
+    do{
+        isUse = await portInUse(port);
+        if(isUse)++port;
+    }while(isUse);
+
     server.listen(port, () => {
-        console.log(`Server started! :: http://localhost:${port}`);
+        console.log(`Server started! :: http://127.0.0.1:${port}`);
     });
 })();
 

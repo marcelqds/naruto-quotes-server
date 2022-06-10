@@ -1,6 +1,5 @@
 /**
  * @author Marcelo Q. Santana
- * @copyright 2022 Marcelo Q. Santana.
  */ 
 
 const { createReadStream } = require('fs');
@@ -17,8 +16,8 @@ const loadQuotes = async() => {
         const fileRead = await readFile(pathFile,{'encoding': 'utf8'});
         quotes = await JSON.parse(fileRead);
         if(!typeof(quotes) === 'object') return null;
-        const { id, name, quote } = quotes[0];
-        if(!(id && name && quote)) return null;
+        const { id, speaker, quote } = quotes[0];
+        if(!(id && speaker && quote)) return null;
 
         return true;
         
