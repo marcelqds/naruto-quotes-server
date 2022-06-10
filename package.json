@@ -1,6 +1,6 @@
 {
   "name": "naruto-quotes-server-node",
-  "version": "1.0.0",
+  "version": "1.0.0-beta",
   "description": "Naruto Quotes Api ==================== Simple app to generate random Naruto quotes using Node.js",
   "main": "dist/bin/index.js",
   "scripts": {
