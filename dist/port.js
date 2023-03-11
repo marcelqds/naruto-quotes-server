@@ -5,7 +5,7 @@ const http = require('http');
 
 const getPort = () => {
     const argv = process.argv.slice(2);
-    indexPort = argv.indexOf('--port');
+    const indexPort = argv.indexOf('--port');
     let port = 5000;
 
     if(argv.length >= 2 
